@@ -3,6 +3,7 @@ import Contact from "./components/Contact";
 import Who from "./components/Who";
 import Hero from "./components/Hero";
 import Works from "./components/Works";
+import bgImage from "../public/img/bg.jpeg";
 
 const Container = styled.div`
   height: 100vh;
@@ -11,7 +12,7 @@ const Container = styled.div`
   overflow-y: auto;
   scrollbar-width: none;
   color: white;
-  background: url("../public/img/bg.jpeg");
+  background: url(${bgImage});
   &::-webkit-scrollbar {
     display: none;
   }
