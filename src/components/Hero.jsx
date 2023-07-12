@@ -1,4 +1,6 @@
 import { styled } from "styled-components";
+import moonImg from "../../public/img/moon.png";
+import lineImg from "../../public/img/line.png";
 import Navbar from "./Navbar";
 
 const Section = styled.div`
@@ -114,7 +116,7 @@ export default function Hero() {
         <Left>
           <Title>Think. Make. Solve.</Title>
           <WhatWeDo>
-            <Line src="../../public/img/line.png" />
+            <Line src={lineImg} />
             <Subtitle>What we Do</Subtitle>
           </WhatWeDo>
           <Desc>
@@ -138,7 +140,7 @@ export default function Hero() {
               </Sphere>
             </Suspense>
           </Canvas> */}
-          <Img src="../../public/img/moon.png" />
+          <Img src={moonImg} />
         </Right>
       </Container>
     </Section>

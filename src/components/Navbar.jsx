@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-
+import searchImg from "../../public/img/search.png";
 const Section = styled.div`
   display: flex;
   justify-content: center;
@@ -56,7 +56,7 @@ export default function Navbar() {
           </List>
         </Links>
         <Icons>
-          <Icon src="../../public/img/search.png" />
+          <Icon src={searchImg} />
           <Button>Hire Now</Button>
         </Icons>
       </Container>
