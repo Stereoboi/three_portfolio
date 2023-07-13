@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-    VITE_SERVICE_EMAIL: ${{ secrets.VITE_SERVICE_EMAIL }}
-    VITE_TEMPLATE_EMAIL: ${{ secrets.VITE_TEMPLATE_EMAIL }}
-    VITE_PUBLIC_EMAIL: ${{ secrets.VITE_PUBLIC_EMAIL }}
+      VITE_SERVICE_EMAIL: ${{ secrets.VITE_SERVICE_EMAIL }}
+      VITE_TEMPLATE_EMAIL: ${{ secrets.VITE_TEMPLATE_EMAIL }}
+      VITE_PUBLIC_EMAIL: ${{ secrets.VITE_PUBLIC_EMAIL }}
 
     steps:
       - name: Checkout repo
