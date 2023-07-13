@@ -23,7 +23,9 @@ const Links = styled.div`
   align-items: center;
   gap: 50px;
 `;
-const Logo = styled.p``;
+const Logo = styled.p`
+  font-family: "Luckiest Guy";
+`;
 const List = styled.ul`
   display: flex;
   gap: 20px;
@@ -46,6 +48,7 @@ const Button = styled.button`
   width: 100px;
   padding: 10px;
   background-color: #da4ea2;
+  font-family: "Londrina Solid";
   color: white;
   border: none;
   border-radius: 5px;

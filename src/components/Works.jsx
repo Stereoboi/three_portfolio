@@ -1,16 +1,8 @@
-// import { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
-// import Development from "./Development";
-// import ProductDesign from "./ProductDesign";
-// import WebDesign from "./WebDesign";
+import { Skills, Projects, SocialMedia, TechStack } from "./work components";
 
-const data = [
-  "Web Design",
-  "Development",
-  "Illustration",
-  "Product Design",
-  "Social Media",
-];
+const data = ["Tech stack", "Projects", "Skills", "Social Media"];
 
 const Section = styled.div`
   height: 100vh;
@@ -92,29 +84,34 @@ const ListItem = styled.li`
 
 const Right = styled.div`
   flex: 1;
+  display: flex;
+  justify-content: center;
 `;
 
 const Works = () => {
+  const [work, setWork] = useState("Web Design");
   return (
     <Section>
       <Container>
         <Left>
           <List>
             {data.map((item) => (
-              <ListItem key={item} text={item}>
+              <ListItem key={item} text={item} onClick={() => setWork(item)}>
                 {item}
               </ListItem>
             ))}
           </List>
         </Left>
         <Right>
-          {/* {work === "Web Design" ? (
-            <WebDesign />
-          ) : work === "Development" ? (
-            <Development />
+          {work === "Tech stack" ? (
+            <TechStack />
+          ) : work === "Projects" ? (
+            <Projects />
+          ) : work === "Skills" ? (
+            <Skills />
           ) : (
-            <ProductDesign />
-          )} */}
+            <SocialMedia />
+          )}
         </Right>
       </Container>
     </Section>

@@ -41,6 +41,7 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
+  font-family: "Londrina Solid";
   padding: 20px;
   background-color: #e8e6e6;
   border: none;
@@ -55,6 +56,7 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
+  font-family: "Londrina Solid";
   background-color: #da4ea2;
   color: white;
   border: none;
