@@ -10,6 +10,11 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
 
+    env:
+    VITE_SERVICE_EMAIL: ${{secret.VITE_SERVICE_EMAIL}}
+    VITE_TEMPLATE_EMAIL: ${{secret.VITE_TEMPLATE_EMAIL}}
+    VITE_PUBLIC_EMAIL: ${{secret.VITE_PUBLIC_EMAIL}}
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
