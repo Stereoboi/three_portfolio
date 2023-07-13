@@ -28,10 +28,10 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
 
-  /* @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
-  } */
+  }
 `;
 
 const Left = styled.div`
@@ -39,10 +39,10 @@ const Left = styled.div`
   display: flex;
   align-items: center;
 
-  /* @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     padding: 20px;
     justify-content: center;
-  } */
+  }
 `;
 
 const List = styled.ul`

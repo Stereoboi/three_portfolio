@@ -1,4 +1,9 @@
+/* eslint-disable react/no-unknown-property */
 import { styled } from "styled-components";
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import Cube from "./Cube";
+import { Suspense } from "react";
 
 const Section = styled.div`
   height: 100vh;
@@ -18,18 +23,17 @@ const Container = styled.div`
 const Left = styled.div`
   flex: 1;
 
-  /* @media only screen and (max-width: 768px) {
-    flex: 1;
-    align-items: center;
-  } */
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 74px;
 
-  /* @media only screen and (max-width: 768px) {
-    text-align: center;
-  } */
+  @media only screen and (max-width: 768px) {
+    font-size: 60px;
+  }
 `;
 
 const Right = styled.div`
@@ -38,10 +42,10 @@ const Right = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  /* @media only screen and (max-width: 768px) {
-    flex: 1;
-    width: 100%;
-  } */
+  @media only screen and (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 const WhatWeDo = styled.div`
@@ -61,10 +65,10 @@ const Subtitle = styled.h2`
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
-  /* @media only screen and (max-width: 768px) {
-      padding: 20px;
-      text-align: center;
-    } */
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+    text-align: center;
+  }
 `;
 
 const Button = styled.button`
@@ -83,21 +87,14 @@ export default function Who() {
     <Section>
       <Container>
         <Left>
-          {/* <Canvas>
+          <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
             <Suspense fallback={null}>
-              <OrbitControls enableZoom={false} />
-              <ambientLight intensity={1} />
+              <ambientLight intensity={0.5} />
               <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.4}>
-                <MeshDistortMaterial
-                  color="#3d1c56"
-                  attach="material"
-                  distort={0.5}
-                  speed={2}
-                />
-              </Sphere>
+              <Cube />
+              <OrbitControls enableZoom={false} autoRotate />
             </Suspense>
-          </Canvas> */}
+          </Canvas>
         </Left>
         <Right>
           <Title>Think outside the square space</Title>
