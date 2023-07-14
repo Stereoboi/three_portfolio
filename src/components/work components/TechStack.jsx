@@ -1,3 +1,62 @@
+import {
+  IconWrp,
+  MainWrp,
+  Text,
+  ReactIcon,
+  NextIcon,
+  TSIcon,
+  MongoIcon,
+  FirebaseIcon,
+  ExpressIcon,
+  StrapiIcon,
+  ReduxIcon,
+  NodeIcon,
+  JSIcon,
+} from "./TechStack.styled";
+
 export default function TechStack() {
-  return <h1>TechStack</h1>;
+  return (
+    <MainWrp>
+      <IconWrp technology={"React"}>
+        <ReactIcon />
+        <Text technology={"React"}>React</Text>
+      </IconWrp>
+      <IconWrp technology={"NextJS"}>
+        <NextIcon />
+        <Text technology={"NextJS"}>NextJS</Text>
+      </IconWrp>
+      <IconWrp technology={"TypeScript"}>
+        <TSIcon />
+        <Text technology={"TypeScript"}>TypeScript</Text>
+      </IconWrp>
+      <IconWrp technology={"MongoDB"}>
+        <MongoIcon />
+        <Text technology={"MongoDB"}>MongoDB</Text>
+      </IconWrp>
+      <IconWrp technology={"Firebase"}>
+        <FirebaseIcon />
+        <Text technology={"Firebase"}>Firebase</Text>
+      </IconWrp>
+      <IconWrp technology={"Express"}>
+        <ExpressIcon />
+        <Text technology={"Express"}>Express</Text>
+      </IconWrp>
+      <IconWrp technology={"Strapi"}>
+        <StrapiIcon />
+        <Text technology={"Strapi"}>Strapi</Text>
+      </IconWrp>
+      <IconWrp technology={"Redux"}>
+        <ReduxIcon />
+        <Text technology={"Redux"}>Redux</Text>
+      </IconWrp>
+      <IconWrp technology={"NodeJS"}>
+        <NodeIcon />
+        <Text technology={"NodeJS"}>NodeJS</Text>
+      </IconWrp>
+      <IconWrp technology={"JavaScript"}>
+        <JSIcon />
+        <Text technology={"JavaScript"}>JavaScript</Text>
+      </IconWrp>
+    </MainWrp>
+  );
 }

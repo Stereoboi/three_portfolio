@@ -11,15 +11,16 @@ import {
   SvgTw,
   SvgGh,
   SvgDc,
-  // TestL,
+  DiscordIcon,
+  TwitterIcon,
+  GitHubIcon,
+  TelegramIcon,
 } from "./SocialMedia.styled";
-import { BsDiscord, BsTwitter, BsGithub, BsTelegram } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 export default function SocialMedia() {
   return (
     <GlobalWrapper>
-      {/* <TestL>FUCK</TestL> */}
       <MainWrapper>
         <UpWrapper>
           <Link
@@ -29,7 +30,7 @@ export default function SocialMedia() {
           >
             <Card1>
               <SvgInst>
-                <BsTelegram size={30} />
+                <TelegramIcon />
               </SvgInst>
             </Card1>
           </Link>
@@ -40,7 +41,7 @@ export default function SocialMedia() {
           >
             <Card2>
               <SvgTw>
-                <BsTwitter size={30} />
+                <TwitterIcon />
               </SvgTw>
             </Card2>
           </Link>
@@ -53,7 +54,7 @@ export default function SocialMedia() {
           >
             <Card3>
               <SvgGh>
-                <BsGithub size={30} />
+                <GitHubIcon />
               </SvgGh>
             </Card3>
           </Link>
@@ -64,7 +65,7 @@ export default function SocialMedia() {
           >
             <Card4>
               <SvgDc>
-                <BsDiscord size={30} />
+                <DiscordIcon />
               </SvgDc>
             </Card4>
           </Link>
