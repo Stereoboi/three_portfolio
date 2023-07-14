@@ -101,13 +101,10 @@ export default function Who() {
           <Title>Think outside the square space</Title>
           <WhatWeDo>
             <Line src="../../public/img/line.png" />
-            <Subtitle>Who we Are</Subtitle>
+            <Subtitle>Text in progress..</Subtitle>
           </WhatWeDo>
-          <Desc>
-            a creative group of designers and developers with a passion for the
-            arts.
-          </Desc>
-          <Button>See our works</Button>
+          <Desc>Text in progress..</Desc>
+          <Button>See my works</Button>
         </Right>
       </Container>
     </Section>

@@ -2,7 +2,8 @@ import projPetlyImage from "../../../public/petly.png";
 import projFootballImage from "../../../public/football.png";
 import projMovieImage from "../../../public/movie.png";
 import { Link } from "react-router-dom";
-import projNodeImage from "../../../public/node.png";
+import projNodeImage from "../../../public/node.webp";
+// import projNodeImage from "../../../public/node.png";
 import {
   MainWrp,
   CardWrp,

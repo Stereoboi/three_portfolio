@@ -19,7 +19,6 @@ export const CardWrp = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
 `;
 export const HiddenWrp = styled.div`
   position: absolute;
@@ -43,4 +42,8 @@ export const Description = styled.p`
   color: white;
   font-size: 18px;
   padding: 10px;
+  @media only screen and (max-width: 768px) {
+    font-size: 10px;
+    word-spacing: 2px;
+  }
 `;

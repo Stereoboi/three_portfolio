@@ -131,11 +131,9 @@ export default function Hero() {
           <Title>Think. Make. Solve.</Title>
           <WhatWeDo>
             <Line src={lineImg} />
-            <Subtitle>What we Do</Subtitle>
+            <Subtitle>Text in progress..</Subtitle>
           </WhatWeDo>
-          <Desc>
-            we enjoy creating delightful, human-centered digital experiences.
-          </Desc>
+          <Desc>Text in progress..</Desc>
           <Button>Learn More</Button>
         </Left>
         <Right>

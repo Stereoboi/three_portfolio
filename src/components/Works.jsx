@@ -2,7 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Skills, Projects, SocialMedia, TechStack } from "./work components";
 
-const data = ["Tech stack", "Projects", "Skills", "Social Media"];
+const data = ["Tech stack", "Projects", "About me", "Social Media"];
 
 const Section = styled.div`
   height: 100vh;
@@ -83,7 +83,7 @@ const ListItem = styled.li`
 `;
 
 const Right = styled.div`
-  flex: 1;
+  flex: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,7 +108,7 @@ const Works = () => {
             <TechStack />
           ) : work === "Projects" ? (
             <Projects />
-          ) : work === "Skills" ? (
+          ) : work === "About me" ? (
             <Skills />
           ) : (
             <SocialMedia />
