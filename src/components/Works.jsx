@@ -63,7 +63,7 @@ const ListItem = styled.li`
     position: absolute;
     top: 0;
     left: 0;
-    color: pink;
+    color: #da4ea2;
     width: 0px;
     overflow: hidden;
     white-space: nowrap;
@@ -92,7 +92,7 @@ const Right = styled.div`
 const Works = () => {
   const [work, setWork] = useState("Web Design");
   return (
-    <Section>
+    <Section id="works">
       <Container>
         <Left>
           <List>
@@ -106,12 +106,12 @@ const Works = () => {
         <Right>
           {work === "Tech stack" ? (
             <TechStack />
-          ) : work === "Projects" ? (
-            <Projects />
+          ) : work === "Social Media" ? (
+            <SocialMedia />
           ) : work === "About me" ? (
             <Skills />
           ) : (
-            <SocialMedia />
+            <Projects />
           )}
         </Right>
       </Container>

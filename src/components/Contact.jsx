@@ -64,6 +64,10 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 5px;
   padding: 20px;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background-color: #9e3976;
+  }
 `;
 
 const Right = styled.div`
@@ -98,7 +102,7 @@ const Contact = () => {
       );
   };
   return (
-    <Section>
+    <Section id="contacts">
       <Container>
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>

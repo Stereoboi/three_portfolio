@@ -87,6 +87,10 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background-color: #9e3976;
+  }
 `;
 
 const Right = styled.div`
@@ -123,6 +127,12 @@ const Img = styled.img`
 `;
 
 export default function Hero() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <Section>
       <Navbar />
@@ -134,7 +144,7 @@ export default function Hero() {
             <Subtitle>Text in progress..</Subtitle>
           </WhatWeDo>
           <Desc>Text in progress..</Desc>
-          <Button>Learn More</Button>
+          <Button onClick={() => scrollToSection("works")}>Learn More</Button>
         </Left>
         <Right>
           <Canvas>

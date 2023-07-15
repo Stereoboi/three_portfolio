@@ -81,9 +81,19 @@ const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   font-family: "Londrina Solid";
+  transition: 0.2s ease-in-out;
+  &:hover {
+    background-color: #9e3976;
+  }
 `;
 
 export default function Who() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <Section>
       <Container>
@@ -104,7 +114,7 @@ export default function Who() {
             <Subtitle>Text in progress..</Subtitle>
           </WhatWeDo>
           <Desc>Text in progress..</Desc>
-          <Button>See my works</Button>
+          <Button onClick={() => scrollToSection("works")}>See my works</Button>
         </Right>
       </Container>
     </Section>
