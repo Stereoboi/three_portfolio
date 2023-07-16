@@ -81,6 +81,8 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   background-color: #e8e6e6;
 `,cB=Xe.button`
   font-family: "Londrina Solid";
+  letter-spacing: 5px;
+  font-size: 15px;
   background-color: #da4ea2;
   color: white;
   border: none;
