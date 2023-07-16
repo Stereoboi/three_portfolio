@@ -57,6 +57,8 @@ const TextArea = styled.textarea`
 
 const Button = styled.button`
   font-family: "Londrina Solid";
+  letter-spacing: 5px;
+  font-size: 15px;
   background-color: #da4ea2;
   color: white;
   border: none;
