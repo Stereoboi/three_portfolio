@@ -10,7 +10,7 @@ import {
   Image,
   HiddenWrp,
   Description,
-} from "./Projects.stylrd";
+} from "./Projects.styled";
 
 export default function Projects() {
   return (

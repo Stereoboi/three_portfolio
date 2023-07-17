@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const MainWrp = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
+  gap: 10px;
   @media only screen and (max-width: 768px) {
     padding: 30px;
   }
@@ -15,6 +15,7 @@ export const CardWrp = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  object-fit: cover;
 `;
 export const Image = styled.img`
   width: 100%;

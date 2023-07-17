@@ -7,6 +7,7 @@ import {
   CardWrapper,
   ImgWrapper,
   ByeWrapper,
+  ResumeLink,
 } from "./Skills.styled";
 import Photo from "../../../public/stereoboi.jpg";
 
@@ -28,9 +29,19 @@ export default function Skills() {
             taking small steps towards my goal. I'm also in search of a team to
             join, where I can improve my skills and gain experience. If my
             profile has caught your interest, please feel free to reach out to
-            me.
-            <ByeWrapper>Sincerely, Bohdan Pishchak</ByeWrapper>
+            me. Also you can check my resume where you can find more details
+            about me, me projects, and tech stack that i know.
           </BioContent>
+          <ResumeLink
+            to={
+              "https://drive.google.com/file/d/1QsiFolWoBhVAcikPVbvoR3tdmmPp4FV9/view?usp=drive_link"
+            }
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume link
+          </ResumeLink>
+          <ByeWrapper>Sincerely, Bohdan Pishchak</ByeWrapper>
         </BioWrapper>
       </CardWrapper>
     </MainWrapper>

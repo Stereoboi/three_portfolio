@@ -7,10 +7,6 @@ import {
   Card3,
   Card4,
   DownWrapper,
-  SvgInst,
-  SvgTw,
-  SvgGh,
-  SvgDc,
   DiscordIcon,
   TwitterIcon,
   GitHubIcon,
@@ -29,9 +25,7 @@ export default function SocialMedia() {
             rel="noopener noreferrer"
           >
             <Card1>
-              <SvgInst>
-                <TelegramIcon />
-              </SvgInst>
+              <TelegramIcon />
             </Card1>
           </Link>
           <Link
@@ -40,9 +34,7 @@ export default function SocialMedia() {
             rel="noopener noreferrer"
           >
             <Card2>
-              <SvgTw>
-                <TwitterIcon />
-              </SvgTw>
+              <TwitterIcon />
             </Card2>
           </Link>
         </UpWrapper>
@@ -53,9 +45,7 @@ export default function SocialMedia() {
             rel="noopener noreferrer"
           >
             <Card3>
-              <SvgGh>
-                <GitHubIcon />
-              </SvgGh>
+              <GitHubIcon />
             </Card3>
           </Link>
           <Link
@@ -64,9 +54,7 @@ export default function SocialMedia() {
             rel="noopener noreferrer"
           >
             <Card4>
-              <SvgDc>
-                <DiscordIcon />
-              </SvgDc>
+              <DiscordIcon />
             </Card4>
           </Link>
         </DownWrapper>

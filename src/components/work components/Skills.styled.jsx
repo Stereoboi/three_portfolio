@@ -1,4 +1,18 @@
 import { styled } from "styled-components";
+import { Link } from "react-router-dom";
+
+export const ResumeLink = styled(Link)`
+  display: flex;
+  width: fit-content;
+  margin-top: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  color: rgb(32, 2, 90);
+  transition: 0.2s ease-in-out;
+  &:hover {
+    color: #da4ea2;
+  }
+`;
 
 export const MainWrapper = styled.div`
   position: relative;
@@ -26,20 +40,24 @@ export const BioWrapper = styled.div`
   background-color: white;
   border-radius: 8px;
   padding: 15px;
+  font-size: 18px;
 `;
 export const ImgWrapper = styled.div`
   padding: 20px;
 `;
 export const BioHeader = styled.h1`
   padding: 10px 0 15px 0;
+  @media only screen and (max-width: 768px) {
+    font-size: 28px;
+  }
 `;
 export const BioContent = styled.p`
   max-width: 500px;
   min-width: 376px;
-  font-size: 18px;
+
   /* text-indent: 3ch; */
 `;
 
-export const ByeWrapper = styled.span`
-  margin-top: 15px;
+export const ByeWrapper = styled.p`
+  margin-top: 10px;
 `;

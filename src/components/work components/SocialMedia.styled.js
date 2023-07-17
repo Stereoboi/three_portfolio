@@ -1,19 +1,6 @@
 import { styled } from "styled-components";
 import { BsDiscord, BsTwitter, BsGithub, BsTelegram } from "react-icons/bs";
 
-export const DiscordIcon = styled(BsDiscord)`
-  font-size: 30px;
-`;
-export const TwitterIcon = styled(BsTwitter)`
-  font-size: 30px;
-`;
-export const GitHubIcon = styled(BsGithub)`
-  font-size: 30px;
-`;
-export const TelegramIcon = styled(BsTelegram)`
-  font-size: 30px;
-`;
-
 export const GlobalWrapper = styled.div`
   display: flex;
   justify-content: center;
@@ -45,10 +32,17 @@ export const Card1 = styled.button`
     cursor: pointer;
     scale: 1.1;
     background-color: rgb(51, 144, 236);
-    color: white;
-    fill: white;
   }
 `;
+
+export const TelegramIcon = styled(BsTelegram)`
+  font-size: 30px;
+  color: rgb(51, 144, 236);
+  ${Card1}:hover & {
+    color: white;
+  }
+`;
+
 export const Card2 = styled.button`
   width: 90px;
   height: 90px;
@@ -63,14 +57,24 @@ export const Card2 = styled.button`
     cursor: pointer;
     scale: 1.1;
     background-color: #03a9f4;
+  }
+`;
+export const TwitterIcon = styled(BsTwitter)`
+  font-size: 30px;
+  color: #03a9f4;
+  ${Card2}:hover & {
     color: white;
-    fill: white;
   }
 `;
 export const DownWrapper = styled.div`
   display: flex;
   flex-direction: row;
   gap: 0.5em;
+`;
+
+export const GitHubIcon = styled(BsGithub)`
+  font-size: 30px;
+  /* color: aqua; */
 `;
 export const Card3 = styled.button`
   width: 90px;
@@ -86,10 +90,9 @@ export const Card3 = styled.button`
     cursor: pointer;
     scale: 1.1;
     background-color: rgb(82, 80, 80);
-    color: white;
-    fill: white;
   }
 `;
+
 export const Card4 = styled.button`
   width: 90px;
   height: 90px;
@@ -104,11 +107,12 @@ export const Card4 = styled.button`
     cursor: pointer;
     scale: 1.1;
     background-color: #8c9eff;
-    color: white;
-    fill: white;
   }
 `;
-export const SvgInst = styled.div``;
-export const SvgTw = styled.div``;
-export const SvgGh = styled.div``;
-export const SvgDc = styled.div``;
+export const DiscordIcon = styled(BsDiscord)`
+  font-size: 30px;
+  color: #8c9eff;
+  ${Card4}:hover & {
+    color: white;
+  }
+`;
