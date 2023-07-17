@@ -42,6 +42,9 @@ export const BioWrapper = styled.div`
   border-radius: 8px;
   padding: 15px;
   font-size: 18px;
+  @media only screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 export const ImgWrapper = styled.div`
   padding: 20px;
@@ -49,12 +52,15 @@ export const ImgWrapper = styled.div`
 export const BioHeader = styled.h1`
   padding: 10px 0 10px 0;
   @media only screen and (max-width: 768px) {
-    font-size: 27px;
+    font-size: 25px;
   }
 `;
 export const BioContent = styled.p`
   max-width: 500px;
   min-width: 376px;
+  @media only screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 
   /* text-indent: 3ch; */
 `;
