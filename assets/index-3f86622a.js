@@ -4171,6 +4171,7 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
   position: relative;
   @media only screen and (max-width: 768px) {
     padding: 0 30px 0 30px;
+    /* margin-bottom: 5px; */
   }
 `,dK=Ye.div`
   position: relative;
@@ -4193,13 +4194,10 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
   font-size: 18px;
 `,gK=Ye.div`
   padding: 20px;
-  @media only screen and (max-width: 768px) {
-    padding: 15px;
-  }
 `,vK=Ye.h1`
-  padding: 10px 0 15px 0;
+  padding: 10px 0 10px 0;
   @media only screen and (max-width: 768px) {
-    font-size: 28px;
+    font-size: 27px;
   }
 `,yK=Ye.p`
   max-width: 500px;
@@ -4474,7 +4472,7 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
   align-items: center;
 
   @media only screen and (max-width: 768px) {
-    padding: 10px 20px 0 20px;
+    padding: 10px 10px 0 10px;
     justify-content: center;
   }
 `,_J=Ye.ul`
@@ -4482,6 +4480,9 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @media only screen and (max-width: 768px) {
+    /* gap: 10px; */
+  }
 `,xJ=Ye.li`
   font-size: 90px;
   font-weight: bold;
