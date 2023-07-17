@@ -4183,10 +4183,10 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
   object-fit: cover;
   top: 0;
   right: 0;
-  /* @media only screen and (max-width: 768px) {
-    width: 80px;
-    height: 80px;
-  } */
+  @media only screen and (max-width: 768px) {
+    width: 90px;
+    height: 90px;
+  }
 `,mK=Ye.div`
   background-color: white;
   border-radius: 8px;
@@ -4200,7 +4200,9 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
 `,vK=Ye.h1`
   padding: 10px 0 10px 0;
   @media only screen and (max-width: 768px) {
-    font-size: 25px;
+    display: flex;
+    width: fit-content;
+    font-size: 23px;
   }
 `,yK=Ye.p`
   max-width: 500px;
