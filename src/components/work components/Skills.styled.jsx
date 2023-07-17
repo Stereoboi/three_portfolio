@@ -44,6 +44,9 @@ export const BioWrapper = styled.div`
 `;
 export const ImgWrapper = styled.div`
   padding: 20px;
+  @media only screen and (max-width: 768px) {
+    padding: 15px;
+  }
 `;
 export const BioHeader = styled.h1`
   padding: 10px 0 15px 0;

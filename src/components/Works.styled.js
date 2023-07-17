@@ -28,7 +28,7 @@ export const Left = styled.div`
   align-items: center;
 
   @media only screen and (max-width: 768px) {
-    padding: 20px;
+    padding: 10px 20px 0 20px;
     justify-content: center;
   }
 `;
