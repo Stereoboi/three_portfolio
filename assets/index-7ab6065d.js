@@ -4192,16 +4192,22 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
   border-radius: 8px;
   padding: 15px;
   font-size: 18px;
+  @media only screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `,gK=Ye.div`
   padding: 20px;
 `,vK=Ye.h1`
   padding: 10px 0 10px 0;
   @media only screen and (max-width: 768px) {
-    font-size: 27px;
+    font-size: 25px;
   }
 `,yK=Ye.p`
   max-width: 500px;
   min-width: 376px;
+  @media only screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 
   /* text-indent: 3ch; */
 `,_K=Ye.p`
