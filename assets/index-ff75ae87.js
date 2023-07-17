@@ -4426,7 +4426,7 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
   @media only screen and (max-width: 768px) {
     font-size: 30px;
   }
-`;function yJ(){return le.jsxs(oJ,{children:[le.jsxs(ro,{technology:"JavaScript",children:[le.jsx(mJ,{}),le.jsx(io,{technology:"JavaScript",children:"JavaScript"})]}),le.jsxs(ro,{technology:"TypeScript",children:[le.jsx(lJ,{}),le.jsx(io,{technology:"TypeScript",children:"TypeScript"})]}),le.jsxs(ro,{technology:"React",children:[le.jsx(sJ,{}),le.jsx(io,{technology:"React",children:"React"})]}),le.jsxs(ro,{technology:"NextJS",children:[le.jsx(aJ,{}),le.jsx(io,{technology:"NextJS",children:"NextJS"})]}),le.jsxs(ro,{technology:"NodeJS",children:[le.jsx(pJ,{}),le.jsx(io,{technology:"NodeJS",children:"NodeJS"})]}),le.jsxs(ro,{technology:"Express",children:[le.jsx(fJ,{}),le.jsx(io,{technology:"Express",children:"Express"})]}),le.jsxs(ro,{technology:"MongoDB",children:[le.jsx(uJ,{}),le.jsx(io,{technology:"MongoDB",children:"MongoDB"})]}),le.jsxs(ro,{technology:"Firebase",children:[le.jsx(cJ,{}),le.jsx(io,{technology:"Firebase",children:"Firebase"})]}),le.jsxs(ro,{technology:"Strapi",children:[le.jsx(hJ,{}),le.jsx(io,{technology:"Strapi",children:"Strapi"})]}),le.jsxs(ro,{technology:"Redux",children:[le.jsx(dJ,{}),le.jsx(io,{technology:"Redux",children:"Redux"})]}),le.jsxs(ro,{technology:"Three",children:[le.jsx(gJ,{}),le.jsx(io,{technology:"Three",children:"ThreeJS"})]}),le.jsxs(ro,{technology:"Tailwind",children:[le.jsx(vJ,{}),le.jsx(io,{technology:"Tailwind",children:"Tailwind"})]})]})}const _J=["Tech stack","Projects","About me","Social Media"],xJ=je.div`
+`;function yJ(){return le.jsxs(oJ,{children:[le.jsxs(ro,{technology:"JavaScript",children:[le.jsx(mJ,{}),le.jsx(io,{technology:"JavaScript",children:"JavaScript"})]}),le.jsxs(ro,{technology:"TypeScript",children:[le.jsx(lJ,{}),le.jsx(io,{technology:"TypeScript",children:"TypeScript"})]}),le.jsxs(ro,{technology:"React",children:[le.jsx(sJ,{}),le.jsx(io,{technology:"React",children:"React"})]}),le.jsxs(ro,{technology:"NextJS",children:[le.jsx(aJ,{}),le.jsx(io,{technology:"NextJS",children:"NextJS"})]}),le.jsxs(ro,{technology:"NodeJS",children:[le.jsx(pJ,{}),le.jsx(io,{technology:"NodeJS",children:"NodeJS"})]}),le.jsxs(ro,{technology:"Express",children:[le.jsx(fJ,{}),le.jsx(io,{technology:"Express",children:"Express"})]}),le.jsxs(ro,{technology:"MongoDB",children:[le.jsx(uJ,{}),le.jsx(io,{technology:"MongoDB",children:"MongoDB"})]}),le.jsxs(ro,{technology:"Firebase",children:[le.jsx(cJ,{}),le.jsx(io,{technology:"Firebase",children:"Firebase"})]}),le.jsxs(ro,{technology:"Strapi",children:[le.jsx(hJ,{}),le.jsx(io,{technology:"Strapi",children:"Strapi"})]}),le.jsxs(ro,{technology:"Redux",children:[le.jsx(dJ,{}),le.jsx(io,{technology:"Redux",children:"Redux"})]}),le.jsxs(ro,{technology:"Three",children:[le.jsx(gJ,{}),le.jsx(io,{technology:"Three",children:"ThreeJS"})]}),le.jsxs(ro,{technology:"Tailwind",children:[le.jsx(vJ,{}),le.jsx(io,{technology:"Tailwind",children:"Tailwind"})]})]})}const _J=je.div`
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -4435,7 +4435,7 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
   color: black;
   font-size: 14px;
   font-weight: 300;
-`,SJ=je.div`
+`,xJ=je.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
@@ -4444,7 +4444,7 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
     width: 100%;
     flex-direction: column;
   }
-`,wJ=je.div`
+`,SJ=je.div`
   flex: 1;
   display: flex;
   align-items: center;
@@ -4453,12 +4453,12 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
     padding: 20px;
     justify-content: center;
   }
-`,MJ=je.ul`
+`,wJ=je.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
-`,EJ=je.li`
+`,MJ=je.li`
   font-size: 90px;
   font-weight: bold;
   cursor: pointer;
@@ -4494,12 +4494,12 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
       }
     }
   }
-`,TJ=je.div`
+`,EJ=je.div`
   flex: 2;
   display: flex;
   justify-content: center;
   align-items: center;
-`,AJ=()=>{const[t,e]=ne.useState("Web Design");return le.jsx(xJ,{id:"works",children:le.jsxs(SJ,{children:[le.jsx(wJ,{children:le.jsx(MJ,{children:_J.map(n=>le.jsx(EJ,{text:n,onClick:()=>e(n),children:n},n))})}),le.jsx(TJ,{children:t==="Tech stack"?le.jsx(yJ,{}):t==="Social Media"?le.jsx(XK,{}):t==="About me"?le.jsx(X$,{}):le.jsx(MK,{})})]})})},bJ="/three_portfolio/assets/bg-b88f0bad.jpeg",CJ=je.div`
+`,TJ=["Tech stack","Projects","About me","Social Media"],AJ=()=>{const[t,e]=ne.useState("Web Design");return le.jsx(_J,{id:"works",children:le.jsxs(xJ,{children:[le.jsx(SJ,{children:le.jsx(wJ,{children:TJ.map(n=>le.jsx(MJ,{text:n,onClick:()=>e(n),children:n},n))})}),le.jsx(EJ,{children:t==="Tech stack"?le.jsx(yJ,{}):t==="Social Media"?le.jsx(XK,{}):t==="About me"?le.jsx(X$,{}):le.jsx(MK,{})})]})})},bJ="/three_portfolio/assets/bg-b88f0bad.jpeg",CJ=je.div`
   height: 100vh;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
