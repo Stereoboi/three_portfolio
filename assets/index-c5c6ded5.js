@@ -4062,8 +4062,9 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
   gap: 20px;
 
   @media only screen and (max-width: 768px) {
-    flex: 1;
+    flex: 0.5;
     align-items: center;
+    gap: 20;
   }
 `,L$=Ye.h1`
   font-size: 74px;
