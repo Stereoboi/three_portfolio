@@ -4193,6 +4193,9 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
   font-size: 18px;
 `,gK=Ye.div`
   padding: 20px;
+  @media only screen and (max-width: 768px) {
+    padding: 15px;
+  }
 `,vK=Ye.h1`
   padding: 10px 0 15px 0;
   @media only screen and (max-width: 768px) {
@@ -4471,7 +4474,7 @@ vec3 mod289(vec3 x){return x-floor(x*(1.0/289.0))*289.0;}vec4 mod289(vec4 x){ret
   align-items: center;
 
   @media only screen and (max-width: 768px) {
-    padding: 20px;
+    padding: 10px 20px 0 20px;
     justify-content: center;
   }
 `,_J=Ye.ul`
