@@ -18,6 +18,7 @@ export const MainWrapper = styled.div`
   position: relative;
   @media only screen and (max-width: 768px) {
     padding: 0 30px 0 30px;
+    /* margin-bottom: 5px; */
   }
 `;
 export const CardWrapper = styled.div`
@@ -44,14 +45,11 @@ export const BioWrapper = styled.div`
 `;
 export const ImgWrapper = styled.div`
   padding: 20px;
-  @media only screen and (max-width: 768px) {
-    padding: 15px;
-  }
 `;
 export const BioHeader = styled.h1`
-  padding: 10px 0 15px 0;
+  padding: 10px 0 10px 0;
   @media only screen and (max-width: 768px) {
-    font-size: 28px;
+    font-size: 27px;
   }
 `;
 export const BioContent = styled.p`

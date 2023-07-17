@@ -28,7 +28,7 @@ export const Left = styled.div`
   align-items: center;
 
   @media only screen and (max-width: 768px) {
-    padding: 10px 20px 0 20px;
+    padding: 10px 10px 0 10px;
     justify-content: center;
   }
 `;
@@ -38,6 +38,9 @@ export const List = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  @media only screen and (max-width: 768px) {
+    /* gap: 10px; */
+  }
 `;
 
 export const ListItem = styled.li`
