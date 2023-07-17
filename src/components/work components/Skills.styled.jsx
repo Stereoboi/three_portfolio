@@ -32,10 +32,10 @@ export const Image = styled.img`
   object-fit: cover;
   top: 0;
   right: 0;
-  /* @media only screen and (max-width: 768px) {
-    width: 80px;
-    height: 80px;
-  } */
+  @media only screen and (max-width: 768px) {
+    width: 90px;
+    height: 90px;
+  }
 `;
 export const BioWrapper = styled.div`
   background-color: white;
@@ -52,7 +52,9 @@ export const ImgWrapper = styled.div`
 export const BioHeader = styled.h1`
   padding: 10px 0 10px 0;
   @media only screen and (max-width: 768px) {
-    font-size: 25px;
+    display: flex;
+    width: fit-content;
+    font-size: 23px;
   }
 `;
 export const BioContent = styled.p`
