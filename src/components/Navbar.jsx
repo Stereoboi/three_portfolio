@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { useScroll } from "../hooks/useScroll";
 
 const Section = styled.div`
   display: flex;
@@ -66,12 +67,8 @@ const Button = styled.button`
 `;
 
 export default function Navbar() {
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const { scrollToSection } = useScroll();
+
   return (
     <Section>
       <Container>

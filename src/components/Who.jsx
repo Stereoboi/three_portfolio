@@ -4,7 +4,7 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Cube from "./Cube";
 import { Suspense } from "react";
-
+import { useScroll } from "../hooks/useScroll";
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -88,12 +88,8 @@ const Button = styled.button`
 `;
 
 export default function Who() {
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const { scrollToSection } = useScroll();
+
   return (
     <Section>
       <Container>

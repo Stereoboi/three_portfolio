@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { Suspense } from "react";
+import { useScroll } from "../hooks/useScroll";
 
 const Section = styled.div`
   height: 100vh;
@@ -127,12 +128,8 @@ const Img = styled.img`
 `;
 
 export default function Hero() {
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const { scrollToSection } = useScroll();
+
   return (
     <Section>
       <Navbar />
