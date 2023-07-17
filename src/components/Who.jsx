@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import Cube from "./Cube";
 import { Suspense } from "react";
 import { useScroll } from "../hooks/useScroll";
+import lineImg from "../../public/img/line.png";
 import {
   Section,
   Container,
@@ -35,7 +36,7 @@ export default function Who() {
         <Right>
           <Title>Think outside the square space</Title>
           <WhatWeDo>
-            <Line src="../../public/img/line.png" />
+            <Line src={lineImg} />
             <Subtitle>Who am I ?</Subtitle>
           </WhatWeDo>
           <Desc>
