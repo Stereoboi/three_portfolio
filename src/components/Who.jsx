@@ -107,9 +107,12 @@ export default function Who() {
           <Title>Think outside the square space</Title>
           <WhatWeDo>
             <Line src="../../public/img/line.png" />
-            <Subtitle>Text in progress..</Subtitle>
+            <Subtitle>Who am I ?</Subtitle>
           </WhatWeDo>
-          <Desc>Text in progress..</Desc>
+          <Desc>
+            I am a beginner front-end developer who seeks answers every day and
+            strives to become better.
+          </Desc>
           <Button onClick={() => scrollToSection("works")}>See my works</Button>
         </Right>
       </Container>

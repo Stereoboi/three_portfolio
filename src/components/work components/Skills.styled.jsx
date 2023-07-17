@@ -40,6 +40,6 @@ export const BioContent = styled.p`
   /* text-indent: 3ch; */
 `;
 
-export const ByeWrapper = styled.div`
+export const ByeWrapper = styled.span`
   margin-top: 15px;
 `;

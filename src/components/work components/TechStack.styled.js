@@ -8,20 +8,23 @@ import {
   SiExpress,
   SiStrapi,
   SiRedux,
+  SiTailwindcss,
+  SiThreedotjs,
 } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoJavascript } from "react-icons/bi";
 
 export const MainWrp = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 5px;
 
   grid-auto-rows: 100px;
   align-items: center;
   justify-content: center;
   @media only screen and (max-width: 768px) {
-    grid-auto-rows: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 70px;
   }
 `;
 export const IconWrp = styled.div`
@@ -63,6 +66,12 @@ export const IconWrp = styled.div`
     if (props.technology === "JavaScript") {
       return `rgb(239,216,29)`;
     }
+    if (props.technology === "Three") {
+      return `white`;
+    }
+    if (props.technology === "Tailwind") {
+      return `rgb(11,17,32)`;
+    }
   }};
   transition: color 0.3s ease;
   &:hover {
@@ -102,6 +111,12 @@ export const Text = styled.p`
     }
     if (props.technology === "JavaScript") {
       return `black`;
+    }
+    if (props.technology === "Three") {
+      return `black`;
+    }
+    if (props.technology === "Tailwind") {
+      return `white`;
     }
   }};
   @media only screen and (max-width: 768px) {
@@ -175,6 +190,20 @@ export const NodeIcon = styled(FaNodeJs)`
 export const JSIcon = styled(BiLogoJavascript)`
   font-size: 60px;
   color: black;
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+`;
+export const ThreeIcon = styled(SiThreedotjs)`
+  font-size: 60px;
+  color: black;
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+  }
+`;
+export const TWIcon = styled(SiTailwindcss)`
+  font-size: 60px;
+  color: rgb(56, 189, 248);
   @media only screen and (max-width: 768px) {
     font-size: 30px;
   }
